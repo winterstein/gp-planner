@@ -100,6 +100,8 @@ Keith Alexander may know his way round SNS
 
 in the DB:
 create table postcode_datazone (postcode text, datazone text);
+Loading this into the DB is slow :(
+psql -d nhs -f /home/daniel/gp-planner/data/raw/SNS_postcode_datazone00393445.sql > pcode.out 
 
 
 ### GP Practice Data
