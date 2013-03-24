@@ -1,0 +1,10 @@
+Forth Valley working with Demographic data about practises sourced from ISD 
+Total number of patients per practise
+Broken down by age, Index of Multiple Deprivation, urban/rural, info derived from patients' postcodes, anonymised
+For practise managers to observe trends, in referrals etc, and compare themselves to relevant practises
+Role of QOF data 
+Commercial confidentiality makes it tricky to get individual practise data (QOF reveals income, etc)
+CHP for practise boundary data, may only be available in a descriptive, text form 
+
+
+
