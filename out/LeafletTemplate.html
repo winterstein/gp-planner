@@ -32,12 +32,20 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     .openPopup();*/
 
 for(var i=0; i<DATA.length; i++) {
-	var polygon = L.polygon(DATA[i].polygon);
-	polygon.setStyle({'color':DATA[i].color,'stroke':false,'fillOpacity':0.5});
-	polygon.bindPopup('W00t')
-	polygon.addTo(map);	
+	if (DATA[i].polygon) {
+		var polygon = L.polygon(DATA[i].polygon);
+		polygon.setStyle({'color':DATA[i].color,'stroke':false,'fillOpacity':0.2});
+		polygon.bindPopup('W00t')
+		polygon.addTo(map);
+	} else if (DATA[i].point) {
+		var polygon = L.circleMarker(DATA[i].point, 5);
+		polygon.setStyle({'color':DATA[i].color,'stroke':false,'fillOpacity':0.6});
+		polygon.bindPopup(DATA[i].name);
+		polygon.addTo(map);
+	} else {
+		console.log("WTF",DATA[i]);
+	}
 }
-
 
 </script>
 

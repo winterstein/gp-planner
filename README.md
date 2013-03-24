@@ -53,6 +53,12 @@ From
 http://www.scotland.gov.uk/Topics/Statistics/sns/SNSRef
 download the Postcode Lookup (to get data-zone to postcode data)
 
+#### Population!
+
+Lots of files here:
+http://www.gro-scotland.gov.uk/statistics/theme/population/estimates/mid-year/2011/tables.html
+
+
 ##### Geography
 
 For SNS\_Geography, run
@@ -104,19 +110,42 @@ Loading this into the DB is slow :(
 psql -d nhs -f /home/daniel/gp-planner/data/raw/SNS_postcode_datazone00393445.sql > pcode.out 
 
 
-### GP Practice Data
+OR
+create table datazones (postcode1 char(5), postcode2 char(5), census_area char(12), dz_code char(12), interzone char(12), council_area char(12), created date, deleted date, splitare varchar);
 
+Create a copy of the .txt file without the first line (is this needed?)
+
+copy datazones from '/home/daniel/gp-planner/data/raw/SNS_postcode_datazone00393445.csv' delimiters ',' CSV;
+
+?? What do the council numbers mean? How to link them with council names?
+
+
+### GP Practice Data: from ISD
+
+http://www.isdscotland.org/Health-Topics/General-Practice/
+
+Chop the first few lines from Prac_ContactDetails_Jan2013_final-1
+In the database:
+
+create table practice_details (NHSBoardName varchar,PracticeCode varchar,size varchar,name varchar,AddressLine1 varchar,AddressLine2 varchar,AddressLine3 varchar,AddressLine4 varchar,postcode char(12),TelephoneNumber varchar,CHPName varchar,CHPCode varchar,PracticeType varchar,DispensingPractice varchar);
+
+copy practice_details from '/home/daniel/gp-planner/data/isd/Prac_ContactDetails_Jan2013_final-1.csv' delimiters ',' CSV;
+
+update practice_details set size = replace(size,',','');
+
+
+
+Alternative -- scrape it
 Location:
 Scrape it from: http://www.nhs24.com/FindLocal
 E.g. 3rd page of postcode=EH7 4LX data:
 http://www.nhs24.com/FindLocal?postcode=EH7%204LX&service=GPs&start=3
 
+BUT better to go to ISD who have files on this stuff, with extra info
+
+
 Practice boundaries scrapable from NHS lothian??
 
-
-Number of Drs
-Number of Patients
- -- This is gettable probably
 
 QOF (quality and outcomes framework) data -- gives e.g. number with diabetes & % who had a blood test
 Practice level data is gettable with permission
