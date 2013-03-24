@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gp_practice_list [
+<!ELEMENT gp_practice_list (gp_practice*)>
+<!ELEMENT gp_practice (gp_practice_name , gp_location? , poststreet , posttown, postcode , phone)>
+<!ELEMENT gp_practice_name (#PCDATA)>
+<!ELEMENT gp_location (#PCDATA)>
+<!ELEMENT poststreet (#PCDATA)>
+<!ELEMENT posttown (#PCDATA)>
+<!ELEMENT postcode (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+]>
+<gp_practice_list>
+<gp_practice>
+<gp_practice_name>Armadale Group Practice</gp_practice_name>
+<poststreet>18 North Street</poststreet><posttown>Armadale</posttown><postcode>EH48 3QB</postcode>
+<phone>01501 730432</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Ashgrove Group Practice</gp_practice_name>
+<poststreet>Ashgrove</poststreet><posttown>Blackburn</posttown><postcode>EH47 7LL</postcode>
+<phone>08444 770 954</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Blackhall Medical Centre</gp_practice_name>
+<poststreet>51 Hillhouse Road</poststreet><posttown>Edinburgh</posttown><postcode>EH4 3TH</postcode>
+<phone>0131 332 7696</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Boroughloch Medical Centre</gp_practice_name>
+<poststreet>1 Meadow Place</poststreet><posttown>Edinburgh</posttown><postcode>EH9 1JZ</postcode>
+<phone>0131 229 7529</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Braids Medical Practice</gp_practice_name>
+<poststreet>6 Camus Avenue</poststreet><posttown>Edinburgh</posttown><postcode>EH10 6QT</postcode>
+<phone>0131 445 5999</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Breich Valley Medical Practice</gp_practice_name>
+<gp_location>Stoneyburn Health Centre</gp_location><poststreet>Sunnyside</poststreet><posttown>Stoneyburn</posttown><postcode>EH47 8BZ</postcode>
+<phone>01501 762515</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Breich Valley Medical Practice</gp_practice_name>
+<gp_location>Fauldhouse Health Centre</gp_location><poststreet>Blackfaulds Place</poststreet><posttown>Fauldhouse</posttown><postcode>EH47 9AS</postcode>
+<phone>01501 770125</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Brunton Place Surgery</gp_practice_name>
+<poststreet>9 Brunton Place</poststreet><posttown>Edinburgh</posttown><postcode>EH7 5EG</postcode>
+<phone>0131 557 5545</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Bruntsfield Medical Practice</gp_practice_name>
+<poststreet>11 Forbes Road</poststreet><posttown>Edinburgh</posttown><postcode>EH10 4EY</postcode>
+<phone>0131 228 6081</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Carmondean Medical Group</gp_practice_name>
+<poststreet>Carmondean Centre</poststreet><posttown>Livingston</posttown><postcode>EH54 8PY</postcode>
+<phone>08444 773155</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Challenging Behaviour Practice</gp_practice_name>
+<gp_location>Boroughloch Medical Centre</gp_location><poststreet>1 Meadow Place</poststreet><posttown>Edinburgh</posttown><postcode>EH9 1JZ</postcode>
+<phone>0131 537 8419</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Colinton Surgery</gp_practice_name>
+<poststreet>296B Colinton Road</poststreet><posttown>Edinburgh</posttown><postcode>EH13 0LB</postcode>
+<phone>0131 441 4555</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Craiglockhart Medical Group</gp_practice_name>
+<poststreet>Oxgangs Path</poststreet><posttown>Edinburgh</posttown><postcode>EH13 9LX</postcode>
+<phone>0131 445 1073</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Craiglockhart Medical Group</gp_practice_name>
+<poststreet>161 Colinton Road</poststreet><posttown>Edinburgh</posttown><postcode>EH14 1BE</postcode>
+<phone>0131 455 8494</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Craigmillar Medical Group</gp_practice_name>
+<poststreet>106 Niddrie Mains Road</poststreet><posttown>Edinburgh</posttown><postcode>EH16 4DT</postcode>
+<phone>0131 536 9500</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Cramond Medical Practice</gp_practice_name>
+<poststreet>2 Cramond Glebe Road</poststreet><posttown>Edinburgh</posttown><postcode>EH4 6NS</postcode>
+<phone>0131-336 5432</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Crewe Medical Centre</gp_practice_name>
+<gp_location>Crewe Medical Centre</gp_location><poststreet>135 Boswall Parkway</poststreet><posttown>Edinburgh</posttown><postcode>EH5 2LY</postcode>
+<phone>0131 552 5544</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dalhousie Medical Practice</gp_practice_name>
+<gp_location>Health Centre</gp_location><poststreet>109-111 High Street</poststreet><posttown>Bonnyrigg</posttown><postcode>EH19 2ET</postcode>
+<phone>0131 537 9844</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dalkeith Medical Practice</gp_practice_name>
+<gp_location>The Health Centre</gp_location><poststreet>24 -26 St Andrew Street</poststreet><posttown>Dalkeith</posttown><postcode>EH22 1AP</postcode>
+<phone>0131 561 5500</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dalkeith Road Medical Practice</gp_practice_name>
+<poststreet>145 Dalkeith Road</poststreet><posttown>Edinburgh</posttown><postcode>EH16 5HQ</postcode>
+<phone>0131 667 1289</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Danderhall Medical Practice</gp_practice_name>
+<gp_location>The Robertson Medical Centre</gp_location><poststreet>85 Newton Church Road</poststreet><posttown>Danderhall</posttown><postcode>EH22 1LX</postcode>
+<phone>0131-654 1079</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Davidson's Mains Medical Centre</gp_practice_name>
+<gp_location>5 Quality Street</gp_location><poststreet>Davidson's Mains</poststreet><posttown>Edinburgh</posttown><postcode>EH4 5BP</postcode>
+<phone>0131 336 2291</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Deans and Eliburn Medical Practice</gp_practice_name>
+<poststreet>Carmondean Centre</poststreet><posttown>Livingston</posttown><postcode>EH54 8PY</postcode>
+<phone>08444 773144</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dedridge Medical Group</gp_practice_name>
+<gp_location>Dedridge Health Centre</gp_location><poststreet>Nigel Rise</poststreet><posttown>Livingston</posttown><postcode>EH54 6QQ</postcode>
+<phone>01506 414586</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr A Pandolfi</gp_practice_name>
+<gp_location>The Surgery</gp_location><poststreet>Baird Road</poststreet><posttown>Ratho</posttown><postcode>EH28 8RA</postcode>
+<phone>0131 333 1062</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Alan J Grant</gp_practice_name>
+<gp_location>Health Centre</gp_location><poststreet>Fleming Place</poststreet><posttown>Blackridge</posttown><postcode>EH48 3SS</postcode>
+<phone>01501 751238</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Alexander and Partners</gp_practice_name>
+<poststreet>Newton Port Surgery</poststreet><posttown>Haddington</posttown><postcode>EH41 3NF</postcode>
+<phone>01620 823183</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Anne Stevenson and Partners</gp_practice_name>
+<poststreet>Bangholm Loan</poststreet><posttown>Edinburgh</posttown><postcode>EH5 3AH</postcode>
+<phone>0131 552 7676</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr D A Cassells &amp; Partners</gp_practice_name>
+<gp_location>Dunbar Medical Centre</gp_location><poststreet>Queens Road</poststreet><posttown>Dunbar</posttown><postcode>EH42 1EE</postcode>
+<phone>01368 863226</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr F Shah</gp_practice_name>
+<poststreet>Carmondean Centre</poststreet><posttown>Livingston</posttown><postcode>EH54 8PY</postcode>
+<phone>0844 477 3166</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Gray and Partners</gp_practice_name>
+<gp_location>Bellevue Medical Centre</gp_location><poststreet>26 Huntingdon Place</poststreet><posttown>Edinburgh</posttown><postcode>EH7 4AT</postcode>
+<phone>0131 556 8196</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Gunn and Partners</gp_practice_name>
+<gp_location>Strathbrock Partnership Centre</gp_location><poststreet>189a West Main Street</poststreet><posttown>Broxburn</posttown><postcode>EH52 5LH</postcode>
+<phone>01506 771771</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Guy Johnson and Dr Helga Rhein</gp_practice_name>
+<gp_location>Sighthill Health Centre</gp_location><poststreet>Calder Road</poststreet><posttown>Edinburgh</posttown><postcode>EH11 4AU</postcode>
+<phone>0131 537 7030</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr L Taylor and Partners</gp_practice_name>
+<poststreet>265 Portobello High Street</poststreet><posttown>Edinburgh</posttown><postcode>EH15 2AW</postcode>
+<phone>0131 669 8406</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr L Taylor and Partners</gp_practice_name>
+<gp_location>Conan Doyle Medical Centre</gp_location><poststreet>4 Nether Liberton Lane</poststreet><posttown>Edinburgh</posttown><postcode>EH16 5TY</postcode>
+<phone>0131 666 5160</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Lang and Partners</gp_practice_name>
+<gp_location>Sighthill Health Centre</gp_location><poststreet>Calder Road</poststreet><posttown>Edinburgh</posttown><postcode>EH11 4AU</postcode>
+<phone>0131 537 7040</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Mark  Gilmour and Partners</gp_practice_name>
+<poststreet>The Health Centre</poststreet><posttown>Bo`ness</posttown><postcode>EH51 0DQ</postcode>
+<phone>01506 822466</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Martin  Tolley and Partners</gp_practice_name>
+<gp_location>Bellevue Medical Centre</gp_location><poststreet>26 Huntingdon Place</poststreet><posttown>Edinburgh</posttown><postcode>EH7 4AT</postcode>
+<phone>0131 556 2642</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr McIntosh and Partners</gp_practice_name>
+<gp_location>Stockbridge Health Centre</gp_location><poststreet>1 India Place</poststreet><posttown>Edinburgh</posttown><postcode>EH3 6EH</postcode>
+<phone>0131 225 9191</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Nigel Ostrowski and Partners</gp_practice_name>
+<poststreet>Bangholm Loan</poststreet><posttown>Edinburgh</posttown><postcode>EH5 3AH</postcode>
+<phone>0131 552 6363</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr R A M Watson and Partners</gp_practice_name>
+<gp_location>Sighthill Health Centre</gp_location><poststreet>Calder Road</poststreet><posttown>Edinburgh</posttown><postcode>EH11 4AU</postcode>
+<phone>0131 537 7060</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr R WD Langlands and Partners</gp_practice_name>
+<poststreet>Newton Port Surgery</poststreet><posttown>Haddington</posttown><postcode>EH41 3NF</postcode>
+<phone>01620 825051</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Roderick J Scott and Partners</gp_practice_name>
+<poststreet>60 Leith Walk</poststreet><posttown>Edinburgh</posttown><postcode>EH6 5HB</postcode>
+<phone>0131 554 6471</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Roderick J Scott and Partners</gp_practice_name>
+<poststreet>26 Leith Walk</poststreet><posttown>Edinburgh</posttown><postcode>EH6 5AA</postcode>
+<phone>0131 554 6471</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr S H Trotter and Partners</gp_practice_name>
+<gp_location>Links Medical Centre</gp_location><poststreet>4 Hermitage Place</poststreet><posttown>Edinburgh</posttown><postcode>EH6 8BW</postcode>
+<phone>0131 554 1036</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Scott and Partners</gp_practice_name>
+<gp_location>Prestonpans Health Centre</gp_location><poststreet>Preston Road</poststreet><posttown>Prestonpans</posttown><postcode>EH32 9QS</postcode>
+<phone>01875 810736</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr Stanley A Moonsawmy</gp_practice_name>
+<gp_location>The Surgery</gp_location><poststreet>110 Mayburn Avenue</poststreet><posttown>Loanhead</posttown><postcode>EH20 9HB</postcode>
+<phone>0131 440 0593</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr T R Badger and Partners</gp_practice_name>
+<gp_location>Dunbar Medical Centre</gp_location><poststreet>Queens Road</poststreet><posttown>Dunbar</posttown><postcode>EH42 1EE</postcode>
+<phone>01368 861435</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Dr V Ritchie and Dr I A Jones</gp_practice_name>
+<gp_location>Fauldhouse Health Centre</gp_location><poststreet>Blackfaulds Place</poststreet><posttown>Fauldhouse</posttown><postcode>EH47 9AS</postcode>
+<phone>01501 770282</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Drs Ayles, Rigg and McCulloch</gp_practice_name>
+<gp_location>Hermitage Medical Practices</gp_location><poststreet>5/6 Hermitage Terrace</poststreet><posttown>Edinburgh</posttown><postcode>EH10 4RP</postcode>
+<phone>0131 447 6277</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Drs Donaldson, Morris and Larkin</gp_practice_name>
+<gp_location>Hermitage Medical Practices</gp_location><poststreet>5/6 Hermitage Terrace</poststreet><posttown>Edinburgh</posttown><postcode>EH10 4RP</postcode>
+<phone>0131 447 6277</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Drs Horn, Bagley and Lavelle</gp_practice_name>
+<gp_location>Dunbar Medical Centre</gp_location><poststreet>Queens Road</poststreet><posttown>Dunbar</posttown><postcode>EH42 1EE</postcode>
+<phone>01368 861401</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Durham Road Medical Group</gp_practice_name>
+<poststreet>25 Durham Road</poststreet><posttown>Edinburgh</posttown><postcode>EH15 1NY</postcode>
+<phone>0131 669 1153</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Durham Road Medical Group</gp_practice_name>
+<poststreet>106 Niddrie Mains Road</poststreet><posttown>Edinburgh</posttown><postcode>EH16 4DT</postcode>
+<phone>0131 536 9595</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>East Calder Medical Practice</gp_practice_name>
+<gp_location>East Calder Health Centre</gp_location><poststreet>147 Main Street</poststreet><posttown>East Calder</posttown><postcode>EH53 0EW</postcode>
+<phone>01506 882882</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>East Linton Surgery</gp_practice_name>
+<gp_location>East Linton Surgery</gp_location><poststreet>Station Road</poststreet><posttown>East Linton</posttown><postcode>EH40 3DP</postcode>
+<phone>01620 860204</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Eastfield Medical Practice</gp_practice_name>
+<poststreet>Eastfield Farm Road</poststreet><posttown>Penicuik</posttown><postcode>EH26 8EZ</postcode>
+<phone>01968 675576</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Edinburgh Access Practice</gp_practice_name>
+<gp_location>Cowgate Clinic</gp_location><poststreet>20 The Cowgate</poststreet><posttown>Edinburgh</posttown><postcode>EH1 3JX</postcode>
+<phone>0131 240 2810</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Edinburgh Access Practice</gp_practice_name>
+<gp_location>The Access Point</gp_location><poststreet>17 &amp; 23 Leith Street</poststreet><posttown>Edinburgh</posttown><postcode>EH1 3AT</postcode>
+<phone>0131 240 2810</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Eskbridge Medical Centre</gp_practice_name>
+<poststreet>8a Bridge Street</poststreet><posttown>Musselburgh</posttown><postcode>EH21 6AG</postcode>
+<phone>0131 665 6821</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Ferguson Medical Practice</gp_practice_name>
+<gp_location>Strathbrock Partnership Centre</gp_location><poststreet>189a West Main Street</poststreet><posttown>Broxburn</posttown><postcode>EH52 5LH</postcode>
+<phone>01506 771700</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Ferniehill Surgery</gp_practice_name>
+<poststreet>8 Ferniehill Road</poststreet><posttown>Edinburgh</posttown><postcode>EH17 7AB</postcode>
+<phone>0131 664 2166</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Gilmore Medical Practice</gp_practice_name>
+<gp_location>Tollcross Health Centre</gp_location><poststreet>Ponton Street</poststreet><posttown>Edinburgh</posttown><postcode>EH3 9QQ</postcode>
+<phone>0131 536 9800</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Gracemount Medical Practice</gp_practice_name>
+<gp_location>Gracemount Medical Centre</gp_location><poststreet>24 Gracemount Drive</poststreet><posttown>Edinburgh</posttown><postcode>EH16 6RN</postcode>
+<phone>0131 664 2377</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Grange Medical Group</gp_practice_name>
+<poststreet>1 Beaufort Road</poststreet><posttown>Edinburgh</posttown><postcode>EH9 1AG</postcode>
+<phone>0131 447 1646</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Gullane Medical Practice</gp_practice_name>
+<poststreet>Broadgait Green</poststreet><posttown>Gullane</posttown><postcode>EH31 2DW</postcode>
+<phone>01620 842171</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Howden Health Centre</gp_practice_name>
+<poststreet>Howden Road West</poststreet><posttown>Livingston</posttown><postcode>EH54 6TP</postcode>
+<phone>01506 423800</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Inchpark Surgery</gp_practice_name>
+<poststreet>10 Marmion Crescent</poststreet><posttown>Edinburgh</posttown><postcode>EH16 5QU</postcode>
+<phone>0131 666 2121</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Inverleith Medical Practice</gp_practice_name>
+<poststreet>43 Inverleith Row</poststreet><posttown>Edinburgh</posttown><postcode>EH3 5PY</postcode>
+<phone>0131 552 3369</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Kinglass Medical Practice</gp_practice_name>
+<gp_location>Kinglass Centre</gp_location><poststreet>Gauze Road</poststreet><posttown>Bo`ness</posttown><postcode>EH51 9QB</postcode>
+<phone>01506 822556</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Kingsgate Medical Practice</gp_practice_name>
+<gp_location>Bathgate Primary Care Centre</gp_location><poststreet>Whitburn Road</poststreet><posttown>Bathgate</posttown><postcode>EH48 2SS</postcode>
+<phone>01506 653134</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Kirkliston Medical Practice</gp_practice_name>
+<gp_location>Kirkliston Health Centre</gp_location><poststreet>50 The Glebe</poststreet><posttown>Kirkliston</posttown><postcode>EH29 9AS</postcode>
+<phone>0131 333 3215</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Ladywell Medical Centre (East)</gp_practice_name>
+<poststreet>26 Featherhall Avenue</poststreet><posttown>Edinburgh</posttown><postcode>EH12 7UN</postcode>
+<phone>0131 334 5000</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Ladywell Medical Centre (West)</gp_practice_name>
+<poststreet>Ladywell Road</poststreet><posttown>Edinburgh</posttown><postcode>EH12 7TB</postcode>
+<phone>0131 334 3602</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Leith Mount Surgery</gp_practice_name>
+<gp_location>Leith Mount Surgery</gp_location><poststreet>2 Lindsay Street</poststreet><posttown>Edinburgh</posttown><postcode>EH6 4EG</postcode>
+<phone>0131 561 1900</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Leven Medical Practice</gp_practice_name>
+<gp_location>Tollcross Health Centre</gp_location><poststreet>Ponton Street</poststreet><posttown>Edinburgh</posttown><postcode>EH3 9QQ</postcode>
+<phone>0131 536 9700</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Liberton Medical Group</gp_practice_name>
+<poststreet>65 Liberton Gardens</poststreet><posttown>Edinburgh</posttown><postcode>EH16 6JT</postcode>
+<phone>0131 664 3050</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Linlithgow Family Practice</gp_practice_name>
+<gp_location>Linlithgow Health Centre</gp_location><poststreet>288 High Street</poststreet><posttown>Linlithgow</posttown><postcode>EH49 7ER</postcode>
+<phone>01506 670036</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Linlithgow Group Medical Practice</gp_practice_name>
+<poststreet>288 High Street</poststreet><posttown>Linlithgow</posttown><postcode>EH49 7ER</postcode>
+<phone>01506 670027</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Loanhead Medical Practice Sutherland House</gp_practice_name>
+<gp_location>Sutherland House</gp_location><poststreet>209 Mayburn Avenue</poststreet><posttown>Loanhead</posttown><postcode>EH20 9ER</postcode>
+<phone>0131 440 0149</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Mackenzie Medical Centre</gp_practice_name>
+<poststreet>20 West Richmond Street</poststreet><posttown>Edinburgh</posttown><postcode>EH8 9DX</postcode>
+<phone>0131 667 2955</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Marchmont Medical Practice</gp_practice_name>
+<poststreet>10 Warrender Park Terrace</poststreet><posttown>Edinburgh</posttown><postcode>EH9 1JA</postcode>
+<phone>0131 229 6314</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Meadows Medical Practice</gp_practice_name>
+<poststreet>9 Brougham Place</poststreet><posttown>Edinburgh</posttown><postcode>EH3 9HW</postcode>
+<phone>0131 229 7709</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Milton Surgery</gp_practice_name>
+<poststreet>132 Mountcastle Drive South</poststreet><posttown>Edinburgh</posttown><postcode>EH15 3LL</postcode>
+<phone>0131 549 7300</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Morningside Medical Practice</gp_practice_name>
+<poststreet>2 Morningside Place</poststreet><posttown>Edinburgh</posttown><postcode>EH10 5ER</postcode>
+<phone>0131 452 8406</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Muirhouse Medical Group</gp_practice_name>
+<gp_location>Muirhouse Medical Centre</gp_location><poststreet>1 Muirhouse Avenue</poststreet><posttown>Edinburgh</posttown><postcode>EH4 4PL</postcode>
+<phone>0131 537 4343</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Murieston Medical Practice</gp_practice_name>
+<gp_location>Hamilton Square</gp_location><poststreet>Murieston South</poststreet><posttown>Livingston</posttown><postcode>EH54 9JZ</postcode>
+<phone>01506 461464</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Murrayfield Medical Centre</gp_practice_name>
+<poststreet>35 Saughton Crescent</poststreet><posttown>Edinburgh</posttown><postcode>EH12 5SS</postcode>
+<phone>0131 337 2166</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Murrayfield Medical Practice</gp_practice_name>
+<poststreet>13b Riversdale Crescent</poststreet><posttown>Edinburgh</posttown><postcode>EH12 5QX</postcode>
+<phone>0131-337 6151</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Newbattle Medical Practice</gp_practice_name>
+<poststreet>Blackcot</poststreet><posttown>Mayfield</posttown><postcode>EH22 4AA</postcode>
+<phone>0131 663 1051</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Newbyres Medical Group</gp_practice_name>
+<poststreet>15 Hunterfield Road</poststreet><posttown>Gorebridge</posttown><postcode>EH23 4TP</postcode>
+<phone>01875 820405</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Newington Surgery</gp_practice_name>
+<poststreet>14 East Preston Street</poststreet><posttown>Edinburgh</posttown><postcode>EH8 9QA</postcode>
+<phone>0131 662 4400</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Newland Medical Practice</gp_practice_name>
+<gp_location>Bathgate Primary Care Centre</gp_location><poststreet>Whitburn Road</poststreet><posttown>Bathgate</posttown><postcode>EH48 2SS</postcode>
+<phone>01506 655155</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>North Berwick Group Practice</gp_practice_name>
+<poststreet>54 St Baldred`s Road</poststreet><posttown>North Berwick</posttown><postcode>EH39 4PU</postcode>
+<phone>01620 892169</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Ormiston Medical Practice</gp_practice_name>
+<poststreet>Sprinty Drive</poststreet><posttown>Ormiston</posttown><postcode>EH35 5LP</postcode>
+<phone>01875 610248</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Parkgrove and East Craigs Medical Centre</gp_practice_name>
+<gp_location>10 Bughtlin Market</gp_location><poststreet>East Craigs</poststreet><posttown>Edinburgh</posttown><postcode>EH12 8XP</postcode>
+<phone>0131 339 6670</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Parkgrove and East Craigs Medical Centre</gp_practice_name>
+<gp_location>10 Bughtlin Market</gp_location><poststreet>East Craigs</poststreet><posttown>Edinburgh</posttown><postcode>EH12 8XP</postcode>
+<phone>0131 339 6670</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Parkgrove and East Craigs Medical Centre</gp_practice_name>
+<poststreet>22B Parkgrove Terrace</poststreet><posttown>Edinburgh</posttown><postcode>EH4 7NX</postcode>
+<phone>0131 312 6600</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Parkgrove and East Craigs Medical Centre</gp_practice_name>
+<poststreet>22B Parkgrove Terrace</poststreet><posttown>Edinburgh</posttown><postcode>EH4 7NX</postcode>
+<phone>0131 312 6600</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Pathhead Medical Practice</gp_practice_name>
+<gp_location>Pathhead Medical Centre</gp_location><poststreet>210 Main Street</poststreet><posttown>Pathhead</posttown><postcode>EH37 5PP</postcode>
+<phone>01875 320302</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Penicuik Medical Practice</gp_practice_name>
+<gp_location>The Health Centre</gp_location><poststreet>37 Imrie Place</poststreet><posttown>Penicuik</posttown><postcode>EH26 8LF</postcode>
+<phone>01968 672612</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Polwarth Surgery</gp_practice_name>
+<gp_location>Polwarth Surgery</gp_location><poststreet>72 Polwarth Gardens</poststreet><posttown>Edinburgh</posttown><postcode>EH11 1LL</postcode>
+<phone>0131 229 5914</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Portobello Medical Practice</gp_practice_name>
+<poststreet>265 Portobello High Street</poststreet><posttown>Edinburgh</posttown><postcode>EH15 2AW</postcode>
+<phone>0131 669 8406</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Restalrig Park Medical Centre</gp_practice_name>
+<gp_location>Restalrig Park Medical Centre</gp_location><poststreet>40 Alemoor Crescent</poststreet><posttown>Edinburgh</posttown><postcode>EH7 6UJ</postcode>
+<phone>0131 554 2141</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Riccarton General Practice</gp_practice_name>
+<poststreet>Heriot-Watt University Medical Centre</poststreet><posttown>Edinburgh</posttown><postcode>EH14 4AS</postcode>
+<phone>0131 451 3010</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Rose Garden Medical Centre</gp_practice_name>
+<gp_location>4 Mill Lane</gp_location><poststreet>Leith</poststreet><posttown>Edinburgh</posttown><postcode>EH6 6TL</postcode>
+<phone>0131 554 1274</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Roslin Medical Practice</gp_practice_name>
+<poststreet>122 Penicuik Road</poststreet><posttown>Roslin</posttown><postcode>EH25 9NT</postcode>
+<phone>0131 440 2043</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Simpson Medical Group</gp_practice_name>
+<gp_location>Bathgate Primary Care Centre</gp_location><poststreet>Whitburn Road</poststreet><posttown>Bathgate</posttown><postcode>EH48 2SS</postcode>
+<phone>01506 654444</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Slateford Medical Practice</gp_practice_name>
+<poststreet>27 Gorgie Park Close</poststreet><posttown>Edinburgh</posttown><postcode>EH14 1NQ</postcode>
+<phone>0131 442 8700</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>South Queensferry Medical Practice</gp_practice_name>
+<poststreet>41 The Loan</poststreet><posttown>South Queensferry</posttown><postcode>EH30 9HA</postcode>
+<phone>0131-537 4407</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Southern Medical Group</gp_practice_name>
+<gp_location>Southern Medical Group</gp_location><poststreet>322 Gilmerton Road</poststreet><posttown>Edinburgh</posttown><postcode>EH17 7PR</postcode>
+<phone>0131 664 2148</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Southern Medical Group</gp_practice_name>
+<poststreet>10 Minto Street</poststreet><posttown>Edinburgh</posttown><postcode>EH9 1RG</postcode>
+<phone>0131 667 1628</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Southfield Medical Practice</gp_practice_name>
+<poststreet>132 Mountcastle Drive South</poststreet><posttown>Edinburgh</posttown><postcode>EH15 3LL</postcode>
+<phone>0131 549 7340</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Southside Surgery</gp_practice_name>
+<poststreet>17 Bernard Terrace</poststreet><posttown>Edinburgh</posttown><postcode>EH8 9NU</postcode>
+<phone>0131 667 2240</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Springwell Medical Group</gp_practice_name>
+<gp_location>Springwell Medical Centre</gp_location><poststreet>39 Ardmillan Terrace</poststreet><posttown>Edinburgh</posttown><postcode>EH11 2JL</postcode>
+<phone>0844 477 8712</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>St Leonards Medical Centre</gp_practice_name>
+<poststreet>145 Pleasance</poststreet><posttown>Edinburgh</posttown><postcode>EH8 9RU</postcode>
+<phone>0131 668 4547</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>St Triduanas Medical Practice</gp_practice_name>
+<poststreet>54 Moira Park</poststreet><posttown>Edinburgh</posttown><postcode>EH7 6RU</postcode>
+<phone>0131 657 3341</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Strathesk Medical Group</gp_practice_name>
+<gp_location>Health Centre</gp_location><poststreet>109-111 High Street</poststreet><posttown>Bonnyrigg</posttown><postcode>EH19 2ET</postcode>
+<phone>0131 537 9977</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Summerside Medical Practice</gp_practice_name>
+<gp_location>Summerside Medical Centre</gp_location><poststreet>29B Summerside Place</poststreet><posttown>Edinburgh</posttown><postcode>EH6 4NY</postcode>
+<phone>0131 554 3533</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Baronscourt Medical Partnership</gp_practice_name>
+<poststreet>89 Northfield Broadway</poststreet><posttown>Edinburgh</posttown><postcode>EH8 7RX</postcode>
+<phone>0131 657 5444</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Craigshill Partnership</gp_practice_name>
+<gp_location>Craigshill Health Centre</gp_location><poststreet>Craigshill Road</poststreet><posttown>Livingston</posttown><postcode>EH54 5DY</postcode>
+<phone>01506 432621</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Firrhill Medical Centre</gp_practice_name>
+<poststreet>167 Colinton Mains Drive</poststreet><posttown>Edinburgh</posttown><postcode>EH13 9AF</postcode>
+<phone>0131-441 3119</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Green Practice</gp_practice_name>
+<gp_location>Stockbridge Health Centre</gp_location><poststreet>1 India Place</poststreet><posttown>Edinburgh</posttown><postcode>EH3 6EH</postcode>
+<phone>0131 260 9227</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Group Practice - Eyre</gp_practice_name>
+<poststreet>31 Eyre Crescent</poststreet><posttown>Edinburgh</posttown><postcode>EH3 5EU</postcode>
+<phone>0131 556 8842</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Harbours Medical Practice</gp_practice_name>
+<poststreet>67 Forthview Road</poststreet><posttown>Longniddry</posttown><postcode>EH32 0LG</postcode>
+<phone>01875 853484</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Harbours Medical Practice</gp_practice_name>
+<gp_location>The Health Centre</gp_location><poststreet>Avenue Road</poststreet><posttown>Cockenzie</posttown><postcode>EH32 0JU</postcode>
+<phone>01875 811501</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Long House Surgery</gp_practice_name>
+<gp_location>The Long House</gp_location><poststreet>73 East Trinity Road</poststreet><posttown>Edinburgh</posttown><postcode>EH5 3EL</postcode>
+<phone>0131 552 4919</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Orchard Medical Practice</gp_practice_name>
+<poststreet>Newton Port Surgery</poststreet><posttown>Haddington</posttown><postcode>EH41 3NF</postcode>
+<phone>01620 825497</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Pentlands Medical Practice</gp_practice_name>
+<gp_location>Pentland Medical Centre</gp_location><poststreet>44 Pentland View</poststreet><posttown>Currie</posttown><postcode>EH14 5QB</postcode>
+<phone>0131 449 2142</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Practice, Bonnyrigg</gp_practice_name>
+<gp_location>Health Centre</gp_location><poststreet>109-111 High Street</poststreet><posttown>Bonnyrigg</posttown><postcode>EH19 2ET</postcode>
+<phone>0131 537 9828</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Richmond Practice</gp_practice_name>
+<poststreet>The Health Centre</poststreet><posttown>Bo`ness</posttown><postcode>EH51 0DQ</postcode>
+<phone>01506 822665</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Riverside Practice</gp_practice_name>
+<gp_location>Esk Medical Centre</gp_location><poststreet>Ladywell Way</poststreet><posttown>Musselburgh</posttown><postcode>EH21 6AB</postcode>
+<phone>0131 665 2267</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>The Wood Medical Practice</gp_practice_name>
+<gp_location>Strathbrock Partnership Centre</gp_location><poststreet>189a West Main Street</poststreet><posttown>Broxburn</posttown><postcode>EH52 5LH</postcode>
+<phone>01506 771800</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Tranent Medical Practice</gp_practice_name>
+<gp_location>The Health Centre</gp_location><poststreet>Loch Road</poststreet><posttown>Tranent</posttown><postcode>EH33 2JX</postcode>
+<phone>01875610697</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>University Health Service</gp_practice_name>
+<poststreet>6 Bristo Square</poststreet><posttown>Edinburgh</posttown><postcode>EH8 9AL</postcode>
+<phone>0131 650 2777</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>West Calder Medical Practice</gp_practice_name>
+<gp_location>West Calder Medical Centre</gp_location><poststreet>65 West End</poststreet><posttown>West Calder</posttown><postcode>EH55 8EJ</postcode>
+<phone>01506 874300</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>West End Medical Practice</gp_practice_name>
+<poststreet>21 Chester Street</poststreet><posttown>Edinburgh</posttown><postcode>EH3 7RF</postcode>
+<phone>0131 225 5220</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>West Esk Medical Group</gp_practice_name>
+<gp_location>Esk Medical Centre</gp_location><poststreet>Ladywell Way</poststreet><posttown>Musselburgh</posttown><postcode>EH21 6AJ</postcode>
+<phone>0131 665 2594</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>West Linton Medical Practice</gp_practice_name>
+<poststreet>West Linton Health Centre</poststreet><posttown>West Linton</posttown><postcode>EH46 7EX</postcode>
+<phone>01968 660808</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Wester Hailes Health Centre</gp_practice_name>
+<gp_location>Wester Hailes Health Centre</gp_location><poststreet>7 Murrayburn Gate</poststreet><posttown>Edinburgh</posttown><postcode>EH14 2SS</postcode>
+<phone>0131 537 7300</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Wester Hailes Health Centre</gp_practice_name>
+<gp_location>Sighthill Health Centre</gp_location><poststreet>Calder Road</poststreet><posttown>Edinburgh</posttown><postcode>EH11 4AU</postcode>
+<phone>0131 537 7070</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Whinpark Medical Practice</gp_practice_name>
+<gp_location>Whinpark Medical Centre</gp_location><poststreet>6 Saughton Road</poststreet><posttown>Edinburgh</posttown><postcode>EH11 3RA</postcode>
+<phone>0131 455 7999</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Whitburn Group Medical Practice</gp_practice_name>
+<gp_location>Whitburn Health Centre</gp_location><poststreet>1 Weavers Lane</poststreet><posttown>Whitburn</posttown><postcode>EH47 0SD</postcode>
+<phone>01501 740297</phone>
+</gp_practice>
+<gp_practice>
+<gp_practice_name>Winchburgh Medical Practice</gp_practice_name>
+<gp_location>Winchburgh Health Centre</gp_location><poststreet>Niddry Road</poststreet><posttown>Winchburgh</posttown><postcode>EH52 6RX</postcode>
+<phone>01506 890210</phone>
+</gp_practice>
+</gp_practice_list>
