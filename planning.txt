@@ -1,0 +1,34 @@
+Planning Apoplication Data
+--------------------------
+
+https://views.scraperwiki.com/run/paview_scraper_1/
+https://scraperwiki.com/views/paview_scraper_1/
+
+Scraperwiki project aggregating data from local authorities including the Lothians.
+
+* East Lothian - scraper missing?
+<authority><authority_id>367</authority_id><config>Idox</config><gss_id>S12000010</gss_id><long_name>East Lothian District Council</long_name><name>East Lothian</name><region>Scotland</region><search_url>http://pa.eastlothian.gov.uk/online-applications/search.do?action=advanced</search_url><snac_id>00QM</snac_id></authority>
+
+* West Lothian
+
+https://api.scraperwiki.com/api/1.0/datastore/sqlite?format=csv&name=weeklywam_system_planning_applications&query=select+*+from+%60WestLothian%60&apikey=
+
+<authority><authority_id>390</authority_id><config>WeeklyWAM</config><gss_id>S12000040</gss_id><long_name>West Lothian Council</long_name><name>West Lothian</name><region>Scotland</region><scraper>weeklywam_system_planning_applications</scraper><search_url>http://planning.westlothian.gov.uk/WAM133/weeklyApplications.do?action=init</search_url><snac_id>00RH</snac_id><table_name>WestLothian</table_name></authority>
+
+
+* Midlothian 
+
+https://api.scraperwiki.com/api/1.0/datastore/sqlite?format=csv&name=idoxv2_system_planning_applications&query=select+*+from+%60Midlothian%60&apikey=
+
+<authority><authority_id>374</authority_id><config>Idox (DatesRecvd)</config><gss_id>S12000019</gss_id><long_name>Midlothian Council</long_name><name>Midlothian</name><region>Scotland</region><scraper>idoxv2_system_planning_applications</scraper><search_url>https://planning-applications.midlothian.gov.uk/OnlinePlanning/search.do?action=application</search_url><snac_id>00QW</snac_id><table_name>Midlothian</table_name></authority>
+
+
+* City of Edinburgh
+
+https://api.scraperwiki.com/api/1.0/datastore/sqlite?format=csv&name=idox_system_planning_applications&query=select+*+from+%60Edinburgh%60&apikey=
+
+<authority><authority_id>387</authority_id><config>Idox</config><gss_id>S12000036</gss_id><long_name>Edinburgh City Council</long_name><name>Edinburgh</name><region>Scotland</region><scraper>idox_system_planning_applications</scraper><search_url>https://citydev-portal.edinburgh.gov.uk/idoxpa-web/search.do?action=advanced</search_url><snac_id>00QP</snac_id><table_name>Edinburgh</table_name></authority>
+
+(Another parallel effort just covering Edinburgh)
+https://scraperwiki.com/scrapers/edinburgh_planning_applications/
+
