@@ -47,7 +47,9 @@ public class SNS {
 	}
 
 	private static void doBigLeafletPage() {
-		String html = FileUtils.read(new File("../out/LeafletTemplate.html"));
+		File f = new File("out/LeafletTemplate.html");
+		System.out.println(f.getAbsolutePath());
+		String html = FileUtils.read(f);
 		
 		DBOptions options = new DBOptions();
 		options.dbUrl = "jdbc:postgresql:nhs";
@@ -61,10 +63,10 @@ public class SNS {
 			conn = SqlUtils.getConnection();
 			
 			json.append("[");
-			// Select datazone geometry
-			Iterable<Object[]> ds = SqlUtils.executeQuery(
-					"select '','0',b.dz_code,b.dz_name,astext(b.the_geom),c.popest2011,b.stdarea_ha from datazone_2001_bdry b, datazone_2001_cent c where b.dz_code=c.dz_code", conn, 0);
-			process(ds, json);
+//			// Select datazone geometry
+//			Iterable<Object[]> ds = SqlUtils.executeQuery(
+//					"select '','0',b.dz_code,b.dz_name,astext(b.the_geom),c.popest2011,b.stdarea_ha from datazone_2001_bdry b, datazone_2001_cent c where b.dz_code=c.dz_code", conn, 0);
+//			process(ds, json);
 			
 			// select practice markers
 			Iterable<Object[]> rs = SqlUtils.executeQuery(
