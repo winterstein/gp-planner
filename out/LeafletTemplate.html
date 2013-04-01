@@ -5,19 +5,39 @@
      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
  <![endif]-->
 <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <style>
-#map { height: 600px; }
+#map { height: 75%; width:80%; 
+	   border:4px solid #333;	   
+	   margin:auto;	   
+	   border-radius:10px;
+	   box-shadow: 2px 2px 5px #888 inset;
+	   }
+h1 {
+	width:80%; 
+	margin:auto;	   
+}
+p.desc {	
+	width:80%;
+	margin:auto;
+}
 </style>
 
 </head>
 <body>
+<h1>Scottish GP Practices &amp; Patient Numbers</h1>
 
+<p class='desc'>This map shows the GP practices of Scotland, with information on the dr-patient ratio.
+Practices are marked as red (lots of patients per GP), yellow (medium), green (normal), or blue (few patients per GP) 
+using a simple thresholds scheme. The data is 2012 data from <a href='http://isdscotland.org'>ISD</a>, mixed with data from
+<a href='http://www.sns.gov.uk'>SNS</a> and <a href='http://openstreetmap.org'>OpenStreetMap</a>. 
+</p>
 <div id="map"></div>
 
 <script>
 // create a map in the "map" div, set the view to a given place and zoom
-var map = L.map('map').setView([55.962261353391,-3.16583689303741], 13);
+var map = L.map('map').setView([55.962261353391,-3.16583689303741], 8);
 
 // add an OpenStreetMap tile layer
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -27,27 +47,116 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 // add a marker in the given location, attach some popup content to it and open the popup
 /* START DATA */ var DATA = [{'polygon':[[51.509, -0.08],[51.503, -0.06],[51.51, -0.047]],'color':'green'}]; /* END DATA */
 
-/*L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS3 popup. <br> Easily customizable.')
-    .openPopup();*/
+
+// Settings
+/** Parse url arguments 
+ * @param [string] Optional, the string to be parsed, will default to window.location when not provided.
+ * @returns a map */
+function getUrlVars(string) {
+	var url;
+	
+	if(string === undefined) {
+		url = ""+window.location;
+	} else {
+		url = string;
+	}
+	
+	url = url.replace(/#.*/, '');
+	var s = url.indexOf("?");
+
+	if (s==-1 || s==url.length-1) return {};
+	
+	var varstr = url.substring(s+1);
+	var kvs = varstr.split("&");
+	var urlVars = {};
+	
+	for(var i=0; i<kvs.length; i++) {
+		var kv = kvs[i];
+		if ( ! kv) continue; // ignore trailing &
+		var e = kv.indexOf("=");
+		
+		if (e!=-1 && e!=kv.length-1) {
+			k = kv.substring(0,e);
+			k = decodeURIComponent(k.replace(/\+/g, " "));
+			v = kv.substring(e+1);
+			v = decodeURIComponent(v.replace(/\+/g, " "));
+			urlVars[k] = v;
+		} else {
+			urlVars[kv] = '';
+		}
+	}	
+	
+	return urlVars;
+};
+
+/* Allow users to alter the thresholds */
+var vars = getUrlVars();
+var LOW = vars['low'] || 500;
+var MEDIUM = vars['medium'] || 1500;
+var HIGH = vars['high'] || 2000;
+
+function pickColor(patients,gps) {
+	var ratio = patients / (1.0*gps);
+	if (ratio < LOW) return 'blue';
+	if (ratio < MEDIUM) return 'green';
+	if (ratio < HIGH) return 'yellow';
+	return 'red'
+}
+
+var name2marker = {};
 
 for(var i=0; i<DATA.length; i++) {
 	if (DATA[i].polygon) {
 		var polygon = L.polygon(DATA[i].polygon);
-		polygon.setStyle({'color':DATA[i].color,'stroke':false,'fillOpacity':0.2});
+		if (DATA[i].color) {
+			polygon.setStyle({'color':DATA[i].color,'stroke':false,'fillOpacity':0.2});
+		}
 		polygon.bindPopup('W00t')
 		polygon.addTo(map);
 	} else if (DATA[i].point) {
 		var polygon = L.circleMarker(DATA[i].point, 5);
-		polygon.setStyle({'color':DATA[i].color,'stroke':false,'fillOpacity':0.6});
-		polygon.bindPopup(DATA[i].name);
+		var gps = DATA[i].gps;
+		var patients = DATA[i].patients;
+		var color = pickColor(patients, gps);
+		polygon.setStyle({'color':color,'stroke':false,'fillOpacity':0.6});
+		polygon.bindPopup(DATA[i].name+": "+patients+" v "+gps+" GPs");
 		polygon.addTo(map);
+		name2marker[DATA[i].name.toLowerCase()] = polygon;
 	} else {
 		console.log("WTF",DATA[i]);
 	}
 }
 
+function highlightPractices(name) {
+	console.log("highlight", "matching "+name);
+	name = name.toLowerCase();
+	for(var n in name2marker) {
+		var m = name2marker[n];
+		if ( ! name || n.indexOf(name)!=-1) {
+			console.log("highlight", n);
+			m.setStyle({'fillOpacity':0.6});
+			m.bringToFront();
+			m.redraw();
+			if (name) {
+				m.openPopup();
+			}
+		} else {			
+			m.closePopup();
+			m.setStyle({'fillOpacity':0.2});
+			m.redraw();
+		}
+	}
+}
+
 </script>
+
+<!-- <div>
+<input type='text' name='practicename' placeholder="Type part of a practice name" onchange="highlightPractices(this.value);">
+</div>
+ -->
+
+<p class='desc'>Produced by Daniel Winterstein with support from Anand Ramkissoon and Jo Walsh
+for NHS Hack Scotland. All mistakes are (c) Daniel Winterstein.</p>
 
 </body>
 </html>

@@ -130,6 +130,10 @@ If you get an error about date formatting  -- you made need to do:
 
 set datestyle = 'ISO, DMY';
 
+Create a postcode column:
+alter table datazones add column postcode char(12);
+update datazones set postcode=postcode1||' '||postcode2;
+
 TODO ?? What do the council numbers mean? How to link them with council names?
 
 
@@ -137,7 +141,7 @@ TODO ?? What do the council numbers mean? How to link them with council names?
 Download from http://www.doogal.co.uk/UKPostcodes.php
 
 
-Or (1st part only) 
+Or (1st part of postcode only) 
 http://www.freemaptools.com/download-uk-postcode-lat-lng.htm
 
 
@@ -177,7 +181,19 @@ create table gps (PracticeCode varchar, GMCcode varchar, surname varchar, firstn
 copy gps from 'GP_ContactDetails_Jan2013_final.csv' delimiters ',' CSV;
 
 
-
+TEST linking: There are 4 practices with no datazone info
+ 
+select p.postcode from practice_details p where not (exists (select 1 from datazones pd where p.postcode=pd.postcode));
+   postcode   
+--------------
+ EH21 7BP    
+ EH21 7BP    
+ EH21 7BP    
+ AB42 9AR    
+(4 rows)
+These could be data-entry errors. HACK alter them
+update practice_details set postcode='EH21 7BQ' where postcode='EH21 7BP';
+update practice_details set postcode='AB41 9AR' where postcode='AB42 9AR';
 
 Deprecated Alternative -- scrape it
 Location:
